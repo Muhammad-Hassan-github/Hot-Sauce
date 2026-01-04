@@ -2,7 +2,7 @@ export const categories = [
     {
     name: "Hot & Sauce Deals",
     desc: "",
-    image: "/images/deal.jpg",
+    image: "/images/deal1.jpg",
     items: [
       { name: "Deal-1", desc: "1 Small Pizza 1 + Regular Drink", image: "/images/deal3.jpg", options: [], size: { Regular: 450, Special: 500 }},
       { name: "Deal-2", desc: "1 Medium Pizza + Half Ltr Drink", image: "/images/deal3.jpg", options: [], size: { Regular: 700, Special: 750 }},
