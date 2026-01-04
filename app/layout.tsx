@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Order from '@/app/components/order'
 import Header from '@/app/components/Header'
+import InstallPrompt from "@/app/components/InstallPrompt";
 
 
 
@@ -35,6 +36,8 @@ export default function RootLayout({
       >
         <Header/>
         {children}
+        <InstallPrompt />  {/* ✅ Install popup added */}
+
         <Order/>
 
       </body>
