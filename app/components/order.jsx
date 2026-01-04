@@ -44,7 +44,38 @@ export default function Home() {
 
   return (
     <div className="p-8 mb-24 bg-slate-900 text-white">
-      {/* same JSX */}
+
+      {/* --- Footer / Total Section --- */}
+      <div className="fixed bottom-0 left-0 w-full bg-slate-700 shadow-lg p-4 flex flex-col md:flex-row items-center justify-between space-y-2 md:space-y-0 rounded-t-2xl border-t border-gray-200">
+        <div className="text-lg font-semibold">
+          Total: <span className="text-green-600">{total} PKR</span>
+        </div>
+        <button
+          onClick={handleWhatsAppOrder}
+          className="flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded-xl shadow-md transition active:scale-95"
+        >
+          Place Order via WhatsApp
+          <iconify-icon
+            icon="mdi:whatsapp"
+            width="24"
+            height="24"
+            style={{ verticalAlign: "middle" }}
+          ></iconify-icon>
+        </button>
+      </div>
+
+      {/* Page Footer */}
+      <div className="text-center text-s text-gray-600">
+        Made by <span className="font-medium ">Muhammad Hassan Manzoor </span>
+         WhatsApp:{" "}
+        <a
+          href="https://wa.me/923137164393"
+          target="_blank"
+          className="font-medium"
+        >
+          0313-7164393
+        </a>
+      </div>
     </div>
   );
 }
