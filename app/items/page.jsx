@@ -8,15 +8,16 @@ import Link from "next/link";
 import { Icon } from "@iconify/react";
 
 export default function Home() {
-  const searchParams = useSearchParams();
-  const itemsString = searchParams.get("items");
+  const searchParams =
+    typeof window !== "undefined" ? useSearchParams() : null;
+
+  const itemsString = searchParams?.get("items");
   const items = itemsString ? JSON.parse(itemsString) : [];
 
   const { cart, addItemToCart, removeItemFromCart } = useCartStore();
 
   return (
-    <div className=" bg-slate-900 text-white pb-7">
-
+    <div className="bg-slate-900 text-white pb-7">
       {/* BACK BUTTON */}
       <div className="p-4">
         <Link href="/">
