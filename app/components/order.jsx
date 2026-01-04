@@ -36,7 +36,7 @@ export default function Home() {
       .join("\n");
 
     const url = `https://wa.me/923137164393?text=${encodeURIComponent(
-      `Hello! I'd like to order:\n${message}\nTotal: ${total} PKR`
+      `Hello Hot & Souce Pizza! I would like to order:\n\n${message}\n\n*Total: ${total} PKR*`
     )}`;
 
     window.open(url, "_blank");

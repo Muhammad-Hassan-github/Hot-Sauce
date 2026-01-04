@@ -18,13 +18,14 @@ export default function Header() {
         <div className="p-4 space-y-3">
 
           {/* App Title */}
-          <div>
-            <h1 className="text-xl font-bold tracking-wide">
-              Champions Shawarma
+          <div className="flex items-center gap-3">
+            <span className="text-3xl animate-bounce">🍕</span>
+            <h1 className="text-2xl md:text-3xl font-extrabold tracking-wide 
+                           bg-clip-text text-transparent 
+                           bg-gradient-to-r from-rose-500 via-orange-400 to-yellow-300
+                           drop-shadow-lg">
+              Hot & Souce Pizza
             </h1>
-            <p className="text-sm text-slate-300">
-              & Burger Point
-            </p>
           </div>
 
           {/* Info Bar */}
@@ -32,7 +33,7 @@ export default function Header() {
 
             {/* Delivery Info */}
             <div className="flex items-center gap-2 text-sm text-slate-200">
-              <span className="text-lg">🏍️</span>
+              <span className="text-lg md:text-xl">🏍️</span>
               <span>Free Home Delivery</span>
             </div>
 
@@ -40,7 +41,7 @@ export default function Header() {
             <button
               onClick={() =>
                 navigator.share?.({
-                  title: "Champions Shawarma",
+                  title: "Hot & Souce Pizza",
                   text: "Check our menu!",
                   url: window.location.href,
                 })

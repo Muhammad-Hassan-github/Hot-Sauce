@@ -1,6 +1,6 @@
 {
   "name": "Hot & Souce Pizza",
-  "short_name": "Hot&Souce",
+  "short_name": "Hot & Souce",
   "description": "Order pizza easily via WhatsApp",
   "start_url": "/",
   "display": "standalone",
